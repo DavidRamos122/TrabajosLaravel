@@ -11,12 +11,12 @@ class Courses_teachers extends Model
 
     public function teachers()
     {
-        return $this->belongsTo('app/Models/Teachers');
+        return $this->belongsTo(Teachers::class);
         
     }
 
     public function courses()
     {
-        return $this->belongsTo('app/Models/Courses');
+        return $this->belongsTo(Courses::class);
     }
 }

@@ -11,13 +11,13 @@ class Areas extends Model
 
     public function courses()
     {
-        return $this->hasMany('app/Models/Courses');
+        return $this->hasMany(Courses::class);
         
     }
     
     public function teachers()
     {
-        return $this->hasMany('app/Models/Teachers');
+        return $this->hasMany(Teachers::class);
         
     }
 }

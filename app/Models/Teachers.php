@@ -12,16 +12,17 @@ class Teachers extends Model
     
     public function courses_teachers()
     {
-        return $this->hasMany('app/Models/Courses_teachers');
+        return $this->hasMany(Courses_teachers::class);
     }
 
     public function areas()
     {
-        return $this->belongsTo('app/Models/Areas');
+        return $this->belongsTo(Areas::class);
     }
 
     public function training_centers()
     {
-        return $this->belongsTo('app/Models/Training_centers');
+        return $this->belongsTo(Training_centers::class);
     }
+    
 }

@@ -11,7 +11,12 @@ class Training_centers extends Model
 
     public function teachers()
     {
-        return $this->hasMany('app/Models/Teachers');
+        return $this->hasMany(Teachers::class);
+        
+    }
+        public function courses()
+    {
+        return $this->hasMany(Courses::class);
         
     }
 }

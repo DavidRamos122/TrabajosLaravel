@@ -11,7 +11,7 @@ class Aprendices extends Model
 
     public function computers()
     {
-        return $this->belongsTo('app/Models/Computers');
+        return $this->belongsTo(Computers::class);
         
     }
 

@@ -12,6 +12,6 @@ class Computers extends Model
     public function aprendices()
     
     {
-        return $this->hasMany('app/Models/Aprendices');
+        return $this->hasMany(Aprendices::class);
     }
 }
